@@ -113,7 +113,6 @@ def create_worksheet():
         ['する', 'to do', '__________________'],
         ['いう', 'to say', '__________________'],
         ['みる', 'to see', '__________________'],
-        ['しっている', 'to know', '__________________'],
         ['寝る (ねる)', 'to sleep', '__________________'],
     ]
     
@@ -133,9 +132,9 @@ def create_worksheet():
     
     dialogue_text = """
     <b>Context:</b> A student sees their teacher at the station.<br/><br/>
-    <b>Student:</b> 先生、こんにちは。どちらへ (1) ________________________ か。<br/>
+    <b>Student:</b> 先生、こんにちは。どちらに (1) ________________________ か。<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iku: honorific)<br/><br/>
-    <b>Teacher:</b> ああ、田中さん。ちょっとデパートへ (2) ________________________。<br/>
+    <b>Teacher:</b> ああ、田中さん。ちょっとデパートに (2) ________________________。<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(iku: polite)<br/><br/>
     <b>Student:</b> そうですか。先生、もうお昼ご飯を (3) ________________________ か。<br/>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(taberu: honorific)<br/><br/>
@@ -150,20 +149,14 @@ def create_worksheet():
     story.append(Paragraph("Circle the correct Honorific sentence for the <b>Teacher's</b> actions.", normal_style))
 
     q1 = """
-    1. The teacher is reading a book.<br/>
+    1. The teacher reads a book.<br/>
     &nbsp;&nbsp;a) 先生は本を読みます。<br/>
     &nbsp;&nbsp;b) 先生は本をお読みになります。<br/>
     &nbsp;&nbsp;c) 先生は本をお読みします。<br/>
     """
     story.append(Paragraph(q1, normal_style))
 
-    q2 = """
-    2. The teacher is tall.<br/>
-    &nbsp;&nbsp;a) 先生は背が高いです。<br/>
-    &nbsp;&nbsp;b) 先生は背がお高いです。<br/>
-    &nbsp;&nbsp;c) 先生は背が高くいらっしゃいます。<br/>
-    """
-    story.append(Paragraph(q2, normal_style))
+    
     
     # Section 4
     story.append(Paragraph("IV. Honorific Nouns & Adjectives", header_style))

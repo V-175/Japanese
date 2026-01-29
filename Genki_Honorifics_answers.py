@@ -85,7 +85,6 @@ def create_answer_key():
         ['する', 'to do', 'なさる'],
         ['いう', 'to say', 'おっしゃる'],
         ['みる', 'to see', 'ご覧になる (ごらんになる)'],
-        ['しっている', 'to know', 'ご存じだ (ごぞんじだ)'],
         ['寝る (ねる)', 'to sleep', 'お休みになる (おやすみになる)'],
     ]
     
@@ -129,10 +128,8 @@ def create_answer_key():
     story.append(Paragraph("III. Choose the Correct Sentence", header_style))
 
     q1_ans = "1. <b>(b) 先生は本をお読みになります。</b>"
-    q2_ans = "2. <b>(b) 先生は背がお高いです。</b> (Adjectives generally take 'o')"
     
     story.append(Paragraph(q1_ans, answer_style))
-    story.append(Paragraph(q2_ans, answer_style))
     story.append(Spacer(1, 10))
 
     # Section 4
